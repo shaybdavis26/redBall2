@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+        <script type="text/javascript">
+            function sayhello(){
+                alert('hi there');
+            }
+            function moveright(){
+                redball.left=redball.left+10;
+            }
+            function moveleft(){
+                redball.left=redball.left-10;
+            }
+            function movebottom(){
+                redball.top=redball.top+10;
+            }
+            function movetop(){
+                redball.top=redball.top-10;
+            }
+            
+            
+            
+            //move left down//
+            function movebottomleft(){
+                movebottom();
+                moveleft();
+            }
+            
+            //move up right//
+            function moveupright(){
+                movetop();
+                moveright();
+            }
+            
+            //move down right//
+             function movebottomright(){
+                movebottom();
+                moveright();
+            }
+            function moveupleft(){
+                movetop();
+                moveleft();
+            }
+            
+            function movesquare(){
+                //slide to the right//
+                 moveright();
+                 moveright();
+                 moveright();
+                 moveright();
+                 moveright();
+                 moveright();
+                //slide down//
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                //slide left//
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                //slide up//
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+            }
+               
+               //move triangle //
+            function movetriangle(){
+                 movebottomright();
+                 movebottomright();
+                 movebottomright();
+                 movebottomright();
+                 movebottomright();
+                 movebottomright();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveleft();
+                 moveupright();
+                 moveupright();
+                 moveupright();
+                 moveupright();
+                 moveupright();
+                 moveupright();
+                 }
+                 // move octagon //
+                 function moveoctagon(){
+                    movebottomright();
+                    movebottomright();
+                    movebottomright();
+                    movebottom();
+                    movebottom();
+                    movebottom();
+                    movebottom();
+                    movebottom();
+                    movebottom();
+                    movebottomleft();
+                    movebottomleft();
+                    movebottomleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    movetop();
+                    movetop();
+                    movetop();
+                    movetop();
+                    movetop();
+                    movetop();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    
+                    
+                 }
+                
+                
+            
+            
+        </script>
+    </head>
+    <body>
+        <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+       <button onclick="sayhello()">hello worlds</button> 
+       <button onclick="moveright()">move right</button>
+       <button onclick="moveleft()">move left</button>
+       <button onclick="movetop()">move up</button>
+       <button onclick="movebottom()">move down</button>
+       <button onclick="movesquare()">move square</button>
+       <button onclick="movebottomright()">move down right</button>
+       <button onclick="moveupright()">move up right</button>
+       <button onclick="movebottomleft()">move down left</button>
+       <button onclick="movetriangle()">move triangle</button>
+       <button onclick="moveoctagon()">move octagon</button>
+       <button onclick="moveupleft()">move up left</button>
+    </body>
+</html>
