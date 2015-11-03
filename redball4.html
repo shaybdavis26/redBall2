@@ -2,6 +2,7 @@
 <html>
     <head>
         <style>
+        
             #redball{
                 position:absolute;
             }
@@ -11,12 +12,17 @@
             
         </style>
         <script>
+        
+        function sayhello(){
+                alert('hi there');
+            }
+        
             function pfadeout(){
-                var myparagraph=$("p");
+                var myparagraph=$(".myp");
                 myparagraph.fadeOut();
             }
             function pfadein(){
-                var myparagraph=$("p");
+                var myparagraph=$(".myp");
                 myparagraph.fadeIn();
             }
             function movetop(){
@@ -30,10 +36,19 @@
             function moveright(){
                 var moveright=$("#redball");
                 moveright.animate({"left":"+=10px"});
+              
+                if(moveright==moveright.animate({"left":"+420px"}))
+                
+                alert ("wall hit");
+                
             }
             function moveleft(){
                 var moveleft=$("#redball");
                 moveleft.animate({"left":"-=10px"});
+                
+                if(moveleft==moveleft.animate({"left":"-9px"}))
+                
+                { alert("wall hit");}
             }
             function movebottomright(){
                 var movedownright=$("#redball");
@@ -281,14 +296,15 @@
             
             
         </script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
+         src="https://storage.googleapis.com/ics-redball/redball.js"></script>
         <script>
        
      </script>
     </head>
     <body>
-        <p>JQuery Codeing</p>
-        <p>My second paragraph</p>
+        <p id="cat">JQuery Codeing</p>
+        <p class="myp">My second paragraph</p>
         
         <button onclick="pfadeout()">Fade Out</button>
         <button onclick="pfadein()">Fade In</button>
@@ -303,8 +319,9 @@
        <button onclick="movebottomright()">move down right</button>
        <button onclick="moveupright()">move up right</button>
        <button onclick="movebottomleft()">move down left</button>
+       <button onclick="moveupleft()">move up left</button>
        <button onclick="movetriangle()">move triangle</button>
        <button onclick="moveoctagon()">move octagon</button>
-       <button onclick="moveupleft()">move up left</button>
+      
     </body>
 </html>
