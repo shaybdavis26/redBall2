@@ -2,326 +2,324 @@
 <html>
     <head>
         <style>
-        
             #redball{
-                position:absolute;
+                position: absolute;
+                left: 40px;
+                top: 250px;
             }
-            #button{
-                margin-top:200px;
-            }
-            
         </style>
         <script>
-        
-        function sayhello(){
-                alert('hi there');
-            }
-        
             function pfadeout(){
-                var myparagraph=$(".myp");
-                myparagraph.fadeOut();
+                var shatiab=$(".myp");
+                shatiab.fadeOut();
             }
             function pfadein(){
-                var myparagraph=$(".myp");
-                myparagraph.fadeIn();
+                var shatiab=$(".myp");
+                shatiab.fadeIn();
             }
-            function movetop(){
-                var moveup=$("#redball");
-                moveup.animate({"top":"-=10px"});
-            }
-            function movebottom(){
-                var movedown=$("#redball");
-                movedown.animate({"top":"+=10px"});
+            function sayhello(){
+                alert('Hi There');
             }
             function moveright(){
-                var moveright=$("#redball");
-                moveright.animate({"left":"+=10px"});
-              
-                if(moveright==moveright.animate({"left":"+420px"}))
-                
-                alert ("wall hit");
-                
+                var moveRight=$("#redball");
+                moveRight.animate({
+                    "left":"+=10px"
+                })
             }
-            function moveleft(){
-                var moveleft=$("#redball");
-                moveleft.animate({"left":"-=10px"});
-                
-                if(moveleft==moveleft.animate({"left":"-9px"}))
-                
-                { alert("wall hit");}
+            
+              function moveLeft(){
+                var moveLeft=$("#redball");
+                moveLeft.animate({
+                    "left":"-=10px"
+                })
             }
-            function movebottomright(){
-                var movedownright=$("#redball");
-                movedownright.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                    
-                });
+            function movetop(){
+                var moveUp=$("#redball");
+                moveUp.animate({
+                    "top":"-=10px"
+                })
             }
-            function moveupright(){
-                var moveupright=$("#redball");
-                moveupright.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                    
-                });
+            function moveDown(){
+                var moveDown=$("#redball");
+                moveDown.animate({
+                    "top":"+=10px"
+                })
             }
-             function movebottomleft(){
-                var movedownleft=$("#redball");
-                movedownleft.animate({"top":"+=10px", 
-                                       "left":"-=10px"
-                    
-                });
-            }
-            function moveupleft(){
+              function moveupleft(){
                 var moveupleft=$("#redball");
-                moveupleft.animate({"top":"-=10px", 
-                                     "left":"-=10px"
-                    
-                });
+                moveupleft.animate({
+                    "top":"-=10px",
+                    "left":"-=10px"
+                })
             }
-             function movesquare(){
+             function moveupright(){
+                var moveupright=$("#redball");
+                moveupright.animate({
+                    "top":"-=10px",
+                    "left":"+=10px"
+                })
+            }
+             function movedownleft(){
+                var movedownleft=$("#redball");
+                movedownleft.animate({
+                    "top":"+=10px",
+                    "left":"-=10px"
+                })
+            }
+            function movedownright(){
+                var movedownright=$("#redball");
+                movedownright.animate({
+                    "top":"+=10px",
+                    "left":"+=10px"
+                })
+            }
+            function movesquare(){
                 var movesquare=$("#redball");
-                movesquare.animate({"left":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"left":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"left":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"left":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"left":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"+=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"+=10px"
-                });
+                movesquare.animate({
+                    "left":"+=10px"
+                })
+                  var movesquare=$("#redball");
+                movesquare.animate({
+                    "left":"+=10px"
+                })
+                  var movesquare=$("#redball");
+                movesquare.animate({
+                    "left":"+=10px"
+                })
                 var movesquare=$("#redball");
-                movesquare.animate({"left":"-=10px"
-                });
+                movesquare.animate({
+                    "top":"+=10px"
+                })
+                 var movesquare=$("#redball");
+                movesquare.animate({
+                    "top":"+=10px"
+                })
+                 var movesquare=$("#redball");
+                movesquare.animate({
+                    "top":"+=10px"
+                })
+                 var movesquare=$("#redball");
+                movesquare.animate({
+                    "left":"-=10px"
+                })
                 var movesquare=$("#redball");
-                movesquare.animate({"left":"-=10px"
-                });
+                movesquare.animate({
+                    "left":"-=10px"
+                })
                 var movesquare=$("#redball");
-                movesquare.animate({"left":"-=10px"
-                });
+                movesquare.animate({
+                    "left":"-=10px"
+                })
                 var movesquare=$("#redball");
-                movesquare.animate({"left":"-=10px"
-                });
-                var movesquare=$("#redball");
-                movesquare.animate({"left":"-=10px"
-                });
+                movesquare.animate({
+                    "top":"-=10px"
+                })
                  var movesquare=$("#redball");
-                movesquare.animate({"top":"-=10px"
-                });
+                movesquare.animate({
+                    "top":"-=10px"
+                })
                  var movesquare=$("#redball");
-                movesquare.animate({"top":"-=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"-=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"-=10px"
-                });
-                 var movesquare=$("#redball");
-                movesquare.animate({"top":"-=10px"
-                });
-                 
-                
+                movesquare.animate({
+                    "top":"-=10px"
+                })
             }
             function movetriangle(){
                 var movetriangle=$("#redball");
-                movetriangle.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                 });
+                movetriangle.animate({
+                     "top":"+=10px",
+                    "left":"+=10px"
+                })
+                var movetriangle=$("#redball");
+                movetriangle.animate({
+                     "top":"+=10px",
+                    "left":"+=10px"
+                })
+                var movetriangle=$("#redball");
+                movetriangle.animate({
+                     "top":"+=10px",
+                    "left":"+=10px"
+                })
+                var movetriangle=$("#redball");
+                movetriangle.animate({
+                     "left":"-=10px" 
+                })
                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                 });
+                movetriangle.animate({
+                     "left":"-=10px" 
+                })
                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                 });
+                movetriangle.animate({
+                     "left":"-=10px" 
+                })
+                var movetriangle=$("#redball");
+                movetriangle.animate({
+                     "left":"-=10px" 
+                })
                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                 });
+                movetriangle.animate({
+                     "left":"-=10px" 
+                })
                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                 });
+                movetriangle.animate({
+                     "left":"-=10px" 
+                })
                  var movetriangle=$("#redball");
-                movetriangle.animate({"left":"-=10px"
-                 });
-                 var movetriangle=$("#redball");
-                movetriangle.animate({"left":"-=10px"
-                 });
-                 var movetriangle=$("#redball");
-                movetriangle.animate({"left":"-=10px"
-                 });
-                 var movetriangle=$("#redball");
-                movetriangle.animate({"left":"-=10px"
-                 });
-                 var movetriangle=$("#redball");
-                movetriangle.animate({"left":"-=10px"
-                 });
-                 var movetriangle=$("#redball");
-                movetriangle.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                 });
-                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                 });
-                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                 });
-                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                 });
-                  var movetriangle=$("#redball");
-                movetriangle.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                 });
-                 
+                movetriangle.animate({
+                    "top":"-=10px",
+                    "left":"+=10px" 
+                })
+                var movetriangle=$("#redball");
+                movetriangle.animate({
+                    "top":"-=10px",
+                    "left":"+=10px" 
+                })
+                var movetriangle=$("#redball");
+                movetriangle.animate({
+                    "top":"-=10px",
+                    "left":"+=10px" 
+                })
             }
             function moveoctagon(){
                 var moveoctagon=$("#redball");
-                moveoctagon.animate({"left":"+=10px"});
+                moveoctagon.animate({
+                    "left":"+=10px"
+                })
                  var moveoctagon=$("#redball");
-                moveoctagon.animate({"left":"+=10px"});
+                moveoctagon.animate({
+                    "left":"+=10px"
+                })
                  var moveoctagon=$("#redball");
-                moveoctagon.animate({"left":"+=10px"});
-                var movedownright=$("#redball");
-                movedownright.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                    
-                });
-                var movedownright=$("#redball");
-                movedownright.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                    
-                });
-                var movedownright=$("#redball");
-                movedownright.animate({"top":"+=10px", 
-                                       "left":"+=10px"
-                    
-                });
-                 var movedown=$("#redball");
-                movedown.animate({"top":"+=10px"});
-                 var movedown=$("#redball");
-                movedown.animate({"top":"+=10px"});
-                 var movedown=$("#redball");
-                movedown.animate({"top":"+=10px"});
-                var movedownleft=$("#redball");
-                movedownleft.animate({"top":"+=10px", 
-                                       "left":"-=10px"
-                    
-                });
-                var movedownleft=$("#redball");
-                movedownleft.animate({"top":"+=10px", 
-                                       "left":"-=10px"
-                    
-                });
-                var movedownleft=$("#redball");
-                movedownleft.animate({"top":"+=10px", 
-                                       "left":"-=10px"
-                    
-                });
-                var moveleft=$("#redball");
-                moveleft.animate({"left":"-=10px"});
-                var moveleft=$("#redball");
-                moveleft.animate({"left":"-=10px"});
-                var moveleft=$("#redball");
-                moveleft.animate({"left":"-=10px"});
-                 var moveupleft=$("#redball");
-                moveupleft.animate({"top":"-=10px", 
-                                     "left":"-=10px"
-                    
-                });
-                 var moveupleft=$("#redball");
-                moveupleft.animate({"top":"-=10px", 
-                                     "left":"-=10px"
-                    
-                });
-                 var moveupleft=$("#redball");
-                moveupleft.animate({"top":"-=10px", 
-                                     "left":"-=10px"
-                    
-                });
-                var moveup=$("#redball");
-                moveup.animate({"top":"-=10px"});
-                var moveup=$("#redball");
-                moveup.animate({"top":"-=10px"});
-                var moveup=$("#redball");
-                moveup.animate({"top":"-=10px"});
-                var moveupright=$("#redball");
-                moveupright.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                    
-                });
-                var moveupright=$("#redball");
-                moveupright.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                    
-                });
-                var moveupright=$("#redball");
-                moveupright.animate({"top":"-=10px", 
-                                       "left":"+=10px"
-                    
-                });
+                moveoctagon.animate({
+                    "left":"+=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px",
+                    "left":"+=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px",
+                    "left":"+=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px",
+                    "left":"+=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px",
+                     "left":"-=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px",
+                     "left":"-=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "top":"+=10px",
+                     "left":"-=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "left":"-=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "left":"-=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                     "left":"-=10px"
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px",
+                    "left":"-=10px" 
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px",
+                    "left":"-=10px" 
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px",
+                    "left":"-=10px" 
+                })
+                var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px",
+                    "left":"+=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px",
+                    "left":"+=10px"
+                })
+                 var moveoctagon=$("#redball");
+                moveoctagon.animate({
+                    "top":"-=10px",
+                    "left":"+=10px"
+                })
             }
-                
-                
-                
-                
-                
-                
             
             
             
+               
         </script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
-         src="https://storage.googleapis.com/ics-redball/redball.js"></script>
-        <script>
-       
-     </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
     </head>
-    <body>
-        <p id="cat">JQuery Codeing</p>
-        <p class="myp">My second paragraph</p>
+         <body>
+        <p class="myp">
+            first paragraph
+        </p>
+        <p id="myp2">
+            second paragraph
+        </p>
         
-        <button onclick="pfadeout()">Fade Out</button>
-        <button onclick="pfadein()">Fade In</button>
-         <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
-         <div id="button"></div>
-       <button onclick="sayhello()">hello worlds</button> 
-       <button onclick="moveright()">move right</button>
-       <button onclick="moveleft()">move left</button>
-       <button onclick="movetop()">move up</button>
-       <button onclick="movebottom()">move down</button>
-       <button onclick="movesquare()">move square</button>
-       <button onclick="movebottomright()">move down right</button>
-       <button onclick="moveupright()">move up right</button>
-       <button onclick="movebottomleft()">move down left</button>
-       <button onclick="moveupleft()">move up left</button>
-       <button onclick="movetriangle()">move triangle</button>
-       <button onclick="moveoctagon()">move octagon</button>
-      
-    </body>
+         <button onclick="pfadeout()">Fade Out</button>
+         <button onclick="pfadein()">Fade In</button>
+          <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+         <button onclick = "sayhello()">Hello Worlds</button>
+         <button onclick="moveright()">move right</button>
+         <button onclick="moveLeft()">move left</button>
+         <button onclick="movetop()">move up</button>
+         <button onclick="moveDown()">move down</button>
+         <button onclick="movesquare()">move in a square</button>
+         <button onclick="movedownright()">down right</button>
+         <button onclick="movetriangle()">move in a triangle</button>
+         <button onclick="moveupright()">up right</button>
+         <button onclick="movedownleft()">down left</button>
+          <button onclick="moveupleft()">up left</button>
+           <button onclick="moveoctagon()">move in an octagon</button>
+         </body>
+    
+        
 </html>
